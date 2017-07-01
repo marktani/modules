@@ -1,7 +1,5 @@
 # modules
 
-A Graphcool module combines many different components to solve a single workflow.
-
 ## Other resources
 
 * [Graphcool Functions ⚡️](https://github.com/graphcool-examples/functions)
