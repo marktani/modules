@@ -1,9 +1,9 @@
 const algoliasearch = require('algoliasearch');
 
 // replace with your own values
-// var client = algoliasearch('YourApplicationID', 'YourAPIKey');
-// var index = client.initIndex('yourIndexName');
-// const modelName = 'yourModelName'
+var client = algoliasearch('YourApplicationID', 'YourAPIKey');
+var index = client.initIndex('yourIndexName');
+const modelName = 'yourModelName'
 
 module.exports = function (event) {
   
