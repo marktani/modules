@@ -3,7 +3,7 @@ const algoliasearch = require('algoliasearch');
 // replace with your own values
 var client = algoliasearch('YourApplicationID', 'YourAPIKey');
 var index = client.initIndex('yourIndexName');
-const modelName = 'yourModelName'
+const modelName = 'SyncModel'
 
 module.exports = function (event) {
   
