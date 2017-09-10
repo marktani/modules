@@ -1,5 +1,5 @@
 type SyncModel {
-  id: ID!
+  id: ID! @isUnique
   createdAt: DateTime!
   updatedAt: DateTime!
   name: String!
