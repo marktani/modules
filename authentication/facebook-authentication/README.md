@@ -7,7 +7,7 @@ Add Facebook Authentication to your Graphcool project ⚡️
 ```sh
 npm -g install graphcool
 graphcool init
-graphcool module add https://github.com/graphcool/modules/blob/master/authentication/facebook-authentication
+graphcool module add graphcool/modules/authentication/facebook-authentication
 ```
 
 ## Authentication flow in app
