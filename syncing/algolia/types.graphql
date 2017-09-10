@@ -1,5 +1,7 @@
 type SyncModel {
   id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
   name: String!
   points: Int
 }
