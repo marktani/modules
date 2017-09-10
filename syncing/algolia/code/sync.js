@@ -36,5 +36,5 @@ function syncUpdatedNode(node) {
 
 function syncDeletedNode(node) {
   console.log('Deleting node')
-  return index.deleteObject(node.objectId)
+  return index.deleteObject(node.objectID)
 }
