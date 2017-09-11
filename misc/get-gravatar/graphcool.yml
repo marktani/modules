@@ -1,0 +1,14 @@
+types: ./types.graphql
+functions:
+  Get gravatar on User create:
+    handler:
+      code:
+        src: ./code/get-gravatar.js
+    type: operationBefore
+    operation: User.create
+  Get gravatar on User update:
+    handler:
+      code:
+        src: ./code/get-gravatar.js
+    type: operationBefore
+    operation: User.update
