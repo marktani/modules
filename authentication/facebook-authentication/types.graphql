@@ -1,4 +1,4 @@
-type User implements Node {
+type FacebookUser implements Node {
   id: ID! @isUnique
   createdAt: DateTime!
   facebookUserId: String @isUnique

@@ -16,7 +16,7 @@ graphcool module add graphcool/modules/authentication/facebook-authentication
 2. The Facebook UI is loaded and the user accepts
 3. The app receives a Facebook Access Token
 4. Your app calls the Graphcool mutation `authenticateFacebookUser(facebookToken: String!)`
-5. If no user exists yet that corresponds to the passed `facebookToken`, a new `User` node will be created
+5. If no user exists yet that corresponds to the passed `facebookToken`, a new `FacebookUser` node will be created
 6. In any case, the `authenticateFacebookUser(facebookToken: String!)` mutation returns a valid token for the user
 7. Your app stores the token and uses it in its `Authorization` header for all further requests to Graphcool
 
@@ -29,7 +29,6 @@ To use Facebook Login you need to create a Facebook app and add the `Facebook Lo
 Once you created a new APP, add the and copy its App ID. Replace `__APP_ID__` in `login.html` with your App ID.
 
 ![](app-id.png)
-
 
 > Note: if your API Version is something else than `v2.9`, you also need to update that in `login.html`.
 

@@ -22,7 +22,7 @@ module.exports = function(event) {
   function getGraphcoolUser(facebookUser) {
     return api.request(`
     query {
-      User(facebookUserId: "${facebookUser.id}") {
+      FacebookUser(facebookUserId: "${facebookUser.id}") {
         id
       }
     }`)
@@ -38,7 +38,7 @@ module.exports = function(event) {
   function createGraphcoolUser(facebookUser) {
     return api.request(`
       mutation {
-        createUser(
+        createFacebookUser(
           facebookUserId: "${facebookUser.id}"
           facebookEmail: "${facebookUser.email}"
         ) {
@@ -46,12 +46,12 @@ module.exports = function(event) {
         }
       }`)
       .then((userMutationResult) => {
-        return userMutationResult.createUser.id
+        return userMutationResult.createFacebookUser.id
       })
   }
 
   function generateGraphcoolToken(graphcoolUserId) {
-    return graphcool.generateAuthToken(graphcoolUserId, 'User')
+    return graphcool.generateAuthToken(graphcoolUserId, 'FacebookUser')
   }
 
   return getFacebookAccountData(facebookToken)
