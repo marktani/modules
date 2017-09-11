@@ -18,7 +18,7 @@ Then, open the file `github-authentication.js` and replace `__CLIENT_ID__` and `
 2. The Github UI is loaded and the user accepts
 3. The app receives a Github code
 4. Your app calls the Graphcool mutation `authenticateGithubUser(githubCode: String!)`
-5. If no user exists yet that corresponds to the passed `githubCode`, a new `User` node will be created
+5. If no user exists yet that corresponds to the passed `githubCode`, a new `GithubUser` node will be created
 6. In any case, the `authenticateGithubUser(githubCode: String!)` mutation returns a valid token for the user
 7. Your app stores the token and uses it in its `Authorization` header for all further requests to Graphcool
 

@@ -48,7 +48,7 @@ module.exports = function (event) {
       .request(
         `
     query {
-      User(githubUserId: "${githubUser.id}") {
+      GithubUser(githubUserId: "${githubUser.id}") {
         id
       }
     }`
@@ -67,7 +67,7 @@ module.exports = function (event) {
       .request(
         `
       mutation {
-        createUser(
+        createGithubUser(
           githubUserId:"${githubUser.id}"
         ) {
           id
@@ -80,7 +80,7 @@ module.exports = function (event) {
   }
 
   function generateGraphcoolToken (graphcoolUserId) {
-    return graphcool.generateAuthToken(graphcoolUserId, 'User')
+    return graphcool.generateAuthToken(graphcoolUserId, 'GithubUser')
   }
 
   return getGithubToken().then(githubToken => {
