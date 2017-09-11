@@ -1,7 +1,7 @@
 type User {
   id: ID!
-
-  # Must be unique
-  # Make it required if Github is the only authentication method in your app
+  id: ID! @isUnique
+  createdAt: DateTime!
   githubUserId: String @isUnique
+  updatedAt: DateTime!
 }
