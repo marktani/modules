@@ -1,6 +1,6 @@
 # google-authentication
 
-Add Google Authentication to your Graphcool project ⚡️
+Add Google Authentication to your Graphcool project 🎁
 
 ## Getting Started
 
