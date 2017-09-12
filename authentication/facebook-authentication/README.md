@@ -1,6 +1,6 @@
 # facebook-authentication
 
-Add Facebook Authentication to your Graphcool project ⚡️
+Add Facebook Authentication to your Graphcool project 🎁
 
 ## Getting Started
 
