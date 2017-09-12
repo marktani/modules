@@ -1,0 +1,12 @@
+types: ./types.graphql
+
+functions:
+  google-authentication:
+    handler:
+      code:
+        src: ./code/google-authentication.js
+    type: resolver
+    schema: ./code/google-authentication.graphql
+
+rootTokens:
+- google-authentication

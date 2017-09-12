@@ -1,0 +1,6 @@
+type GoogleUser implements Node {
+  id: ID! @isUnique
+  googleUserId: String @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
