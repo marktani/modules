@@ -1,6 +1,6 @@
 # github-authentication
 
-Add Github Authentication to your Graphcool project ⚡️
+Add Github Authentication to your Graphcool project 🎁
 
 ## Getting Started
 
