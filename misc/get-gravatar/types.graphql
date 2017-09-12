@@ -1,4 +1,7 @@
-type User implements Node {
+type GravatarUser implements Node {
+  createdAt: DateTime!
   email: String @isUnique
   gravatarUrl: String
+  id: ID! @isUnique
+  updatedAt: DateTime!
 }
