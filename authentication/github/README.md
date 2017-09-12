@@ -10,7 +10,7 @@ graphcool init
 graphcool module add graphcool/modules/authentication/github
 ```
 
-Then, open the file `github-authentication.js` and replace `__CLIENT_ID__` and `__CLIENT_SECRET__` with your Github credentials.
+Then, open the file `code/github-authentication.js` and replace `__CLIENT_ID__` and `__CLIENT_SECRET__` with your Github credentials.
 
 ## Authentication flow in app
 
